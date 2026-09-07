@@ -61,6 +61,8 @@ export default defineConfig({
       input: {
         top: r("index.html"),
         rack: r("rack-checker/index.html"),
+        conduit: r("conduit-checker/index.html"),
+        pullbox: r("pullbox-checker/index.html"),
       },
     },
   },

@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://red-spider-lily-616.github.io/denki-tools/sitemap.xml
