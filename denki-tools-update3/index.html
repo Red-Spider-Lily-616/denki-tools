@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>電気設備の計算ツール集 | 現場で使える無料Webツール</title>
+  <meta name="description" content="ケーブルラックの占有率・荷重計算など、電気工事・計装工事の実務計算を無料で。インストール不要、スマホ対応、広告なし。現場経験者が作った計算ツール集です。" />
+  <!-- OGP・canonical設定 -->
+  <link rel="canonical" href="https://red-spider-lily-616.github.io/denki-tools/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="電気設備の計算ツール集" />
+  <meta property="og:description" content="ケーブルラック占有率・荷重計算など、電気工事の実務計算を無料で。" />
+  <meta property="og:url" content="https://red-spider-lily-616.github.io/denki-tools/" />
+  <meta property="og:image" content="https://red-spider-lily-616.github.io/denki-tools/ogp.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <!-- OGPここまで -->
+  <!-- Search Console確認タグ：content の値を「HTMLタグ」方式で表示されたものに置換 -->
+  <meta name="google-site-verification" content="BtkNcozNamVBY5bWrSWNf7DhDs6Ch9HB-xxhTrj3Rro" />
+  <link rel="icon" type="image/png" href="/favicon.png" />
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500;600&family=IBM+Plex+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet" />
+  <style>
+    :root { --ink:#22272B; --sub:#69737D; --paper:#F3F4F1; --card:#FFF; --line:#E1E4DE; }
+    * { box-sizing: border-box; }
+    body { margin:0; background:var(--paper); color:var(--ink);
+      font-family:'IBM Plex Sans JP','Hiragino Kaku Gothic ProN','Noto Sans JP',sans-serif; }
+    .wrap { max-width:640px; margin:0 auto; padding:28px 16px 60px; }
+    .eyebrow { font-family:'IBM Plex Mono',monospace; font-size:11px; letter-spacing:.18em; color:var(--sub); font-weight:600; }
+    h1 { font-size:24px; margin:6px 0 8px; }
+    .lead { font-size:14px; color:var(--sub); line-height:1.9; margin:0 0 28px; }
+    .card { display:block; background:var(--card); border:1px solid var(--line); border-radius:14px;
+      padding:18px; text-decoration:none; color:inherit; margin-bottom:12px; transition:border-color .15s; }
+    .card:hover { border-color:#B9C0B8; }
+    .card h2 { font-size:16px; margin:0 0 6px; }
+    .card p { font-size:13px; color:var(--sub); margin:0; line-height:1.8; }
+    .tag { display:inline-block; font-family:'IBM Plex Mono',monospace; font-size:10px; letter-spacing:.1em;
+      color:#1971C2; background:#E7F0FA; border-radius:99px; padding:3px 9px; font-weight:600; margin-bottom:8px; }
+    .soon { opacity:.55; }
+    .soon .tag { color:var(--sub); background:#ECEEE9; }
+    footer { margin-top:40px; font-size:12px; color:var(--sub); line-height:1.9; }
+    footer a { color:var(--sub); }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="eyebrow">DENKI TOOLS</div>
+    <h1>電気設備の計算ツール集</h1>
+    <p class="lead">電気工事・計装工事の実務でそのまま使える計算ツールを公開しています。インストール不要・無料・広告なし。スマホのホーム画面に追加すればオフラインの現場でも動きます。</p>
+
+    <a class="card" href="rack-checker/">
+      <span class="tag">TOOL 01</span>
+      <h2>ケーブルラック 占有率・荷重チェッカー</h2>
+      <p>ケーブルの種類と本数を選ぶだけで、ラックの占有率・推奨サイズ・セパレーター位置・許容荷重に対する負担率を自動計算。内線規程の強電・弱電分離、ネグロスSR/QR形の許容静荷重に対応。</p>
+    </a>
+
+    <a class="card" href="conduit-checker/">
+      <span class="tag">TOOL 02</span>
+      <h2>電線管サイズ選定ツール</h2>
+      <p>IV線・CVケーブルの種類と本数を選ぶだけで、PF管・CD管・ねじなし・薄鋼・厚鋼・FEPの適合サイズを内線規程の収容率（32%）で一括判定。断面図と占積率も表示します。</p>
+    </a>
+
+    <a class="card" href="pullbox-checker/">
+      <span class="tag">TOOL 03</span>
+      <h2>プルボックス サイズ選定ツール</h2>
+      <p>貫通する電線管と経路（通し・直角）を選ぶだけで、直線引き8倍則・直角引き6倍則・ケーブル許容曲げ半径からW×L×Dの必要寸法を計算。寸法の決定要因も表示します。</p>
+    </a>
+
+    <a class="card" href="voltage-drop/">
+      <span class="tag">TOOL 04</span>
+      <h2>電圧降下 計算ツール</h2>
+      <p>配線方式・電流・こう長を入れるだけで、内線規程の簡易式による電圧降下と、許容降下率に収まる最小電線サイズを自動判定。こう長別の許容値目安表つき。</p>
+    </a>
+
+    <a class="card" href="words/">
+      <span class="tag" style="color:#2B8A3E;background:#E6F4EA">WORDS</span>
+      <h2>電気用語集</h2>
+      <p>弱電流電線、セパレーター、収容率、CD管とPF管の違いなど、電気・計装の用語を現場目線で解説。計算ツールと連動しています。</p>
+    </a>
+
+    <a class="card" href="https://forms.gle/ifJ9uVDc1QBDRZas8" target="_blank" rel="noopener">
+      <span class="tag" style="color:#D9480F;background:#FCEDE5">REQUEST</span>
+      <h2>リクエストボックス</h2>
+      <p>「こんな計算ツールが欲しい」「この数値を追加してほしい」など、匿名OK・1分で送れます。現場で困っている計算、募集中です。</p>
+    </a>
+
+    <footer>
+      <p>計算結果は概算値の参考情報です。実施設計ではメーカーカタログ・内線規程・社内基準にて確認してください。</p>
+      <p>&copy; DENKI TOOLS</p>
+    </footer>
+  </div>
+</body>
+</html>
