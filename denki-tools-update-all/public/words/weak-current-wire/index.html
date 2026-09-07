@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>弱電流電線とは？意味と実務ポイント | 電気用語集 - denki-tools</title>
+  <meta name="description" content="弱電流電線とは何か、強電（低圧ケーブル）との違い、同一ケーブルラック敷設時にセパレーターでの分離が必要になる理由を、計装工事の実務目線で解説します。" />
+  <link rel="canonical" href="https://red-spider-lily-616.github.io/denki-tools/words/weak-current-wire/" />
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="弱電流電線とは？意味と実務ポイント" />
+  <meta property="og:description" content="弱電流電線とは何か、強電（低圧ケーブル）との違い、同一ケーブルラック敷設時にセパレーターでの分離が必要になる理由を、計装工事の実務目線で解説します。" />
+  <meta property="og:url" content="https://red-spider-lily-616.github.io/denki-tools/words/weak-current-wire/" />
+  <meta property="og:image" content="https://red-spider-lily-616.github.io/denki-tools/ogp.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <link rel="icon" type="image/png" href="../../favicon.png" />
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500;600&family=IBM+Plex+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet" />
+  <style>
+    :root { --ink:#22272B; --sub:#69737D; --paper:#F3F4F1; --card:#FFF; --line:#E1E4DE; --accent:#D9480F; }
+    * { box-sizing:border-box; }
+    body { margin:0; background:var(--paper); color:var(--ink); line-height:2;
+      font-family:'IBM Plex Sans JP','Hiragino Kaku Gothic ProN','Noto Sans JP',sans-serif; }
+    .wrap { max-width:640px; margin:0 auto; padding:24px 16px 60px; font-size:14px; }
+    .crumb { font-size:11px; color:var(--sub); margin-bottom:18px; } .crumb a { color:var(--sub); }
+    .eyebrow { font-family:'IBM Plex Mono',monospace; font-size:11px; letter-spacing:.18em; color:var(--sub); font-weight:600; }
+    h1 { font-size:24px; margin:4px 0 2px; } .yomi { font-size:12px; color:var(--sub); margin:0 0 14px; }
+    .lead { background:var(--card); border:1px solid var(--line); border-radius:12px; padding:14px 16px; font-weight:600; margin:0 0 22px; }
+    h2 { font-size:16px; margin:26px 0 8px; padding-left:10px; border-left:3px solid var(--accent); }
+    p { margin:0 0 14px; color:#454C52; }
+    .rel { background:var(--card); border:1px solid var(--line); border-radius:12px; padding:14px 16px; margin-top:26px; font-size:13px; }
+    .rel b { display:block; font-size:11px; color:var(--sub); letter-spacing:.1em; margin-bottom:4px; font-family:'IBM Plex Mono',monospace; }
+    .rel a { color:#1971C2; }
+    footer { margin-top:30px; font-size:12px; color:var(--sub); display:flex; justify-content:space-between; flex-wrap:wrap; gap:8px; }
+    footer a { color:var(--sub); }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="crumb"><a href="../../">denki-tools</a> › <a href="../">電気用語集</a> › 弱電流電線</div>
+    <div class="eyebrow">WORDS</div>
+    <h1>弱電流電線</h1>
+    <p class="yomi">じゃくでんりゅうでんせん</p>
+    <p class="lead">弱電流電線とは、電話・インターホン・LAN・計装信号など、弱電流電気（小さな電圧・電流による信号や情報）の伝送に使う電線のこと。電力を送る「強電」の電線・ケーブルとは、規程上も施工上も区別して扱われる。</p>
+    <h2>強電と何が違うのか</h2>
+    <p>電灯・動力など電力供給用の低圧ケーブル（CV・CVTなど）が「強電」、信号・通信用が「弱電」という区分が現場の共通言語になっている。計装工事で扱うKPEVやJKVV、LANケーブル、電話用のFCPEVなどは弱電流電線に該当する。なお100V/200Vの制御回路に使うCVV・CVVSは、信号っぽい見た目でも低圧回路（強電側）として扱うのが基本。同じCVVSでもDC24Vや4-20mAの計装信号に使う場合は弱電側と考える。</p>
+    <h2>なぜ分離が必要か</h2>
+    <p>内線規程では、低圧の絶縁電線・ケーブルと弱電流電線を同一のケーブルラックやダクトに施設する場合、セパレーター（隔壁）等で相互に接触しないよう分離することを求めている。感電・焼損防止に加え、実務上は動力ケーブルからの誘導ノイズで計装信号が乱れるのを防ぐ意味が大きい。ノイズに敏感な4-20mA・熱電対・測温抵抗体の回路は、分離だけでなく離隔（目安300mm以上）や別ルート化まで検討したい。</p>
+
+    <div class="rel">
+      <b>RELATED</b>
+      関連用語：<a href="../separator/">セパレーター</a><br>関連ツール：<a href="../../rack-checker/">ケーブルラック占有率・荷重チェッカー</a>（強電・弱電を自動分類してセパレーター位置を計算）
+    </div>
+    <footer>
+      <a href="../">← 用語集トップへ</a>
+      <span>© DENKI TOOLS</span>
+    </footer>
+  </div>
+</body>
+</html>
