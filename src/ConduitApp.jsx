@@ -33,7 +33,7 @@ const WIRE_DB = [
     ["VCTF 1.25sq-3C", 8],
     ["LAN Cat5e", 5.5], ["LAN Cat6", 6.5], ["LAN Cat6A", 7.5],
     ["光ケーブル 4心", 9], ["ディストリビューションケーブル", 9],
-    ["FCPEV 0.75sq-1P", 6.5], ["FCPEV 0.75sq-2P", 8.5], ["FCPEV 0.9-5P", 9.5], ["FCPEV 0.9-10P", 11.5],
+    ["FCPEV 0.75sq-1P", 6.5], ["FCPEV 0.75sq-2P", 8.5], ["FCPEV 0.75sq-3P", 9], ["FCPEV 0.75sq-5P", 10], ["FCPEV 0.75sq-10P", 12.5], ["FCPEV 0.75sq-15P", 14], ["FCPEV 0.9-5P", 9.5], ["FCPEV 0.9-10P", 11.5],
   ]},
 ];
 const FLAT = {};
@@ -355,10 +355,12 @@ export default function ConduitChecker() {
           <p style={{ margin: 0, color: "#454C52" }}>
             屋内の隠ぺい・露出にはPF管（自己消火性あり）、コンクリート打込みにはCD管（オレンジ色・埋設専用）、機械的強度が必要な露出部や重量物のある場所には金属管（ねじなし・薄鋼・厚鋼）、地中埋設の引込・幹線にはFEP管、が一般的な使い分けです。計算結果は参考情報のため、実施設計では特記仕様書・社内基準に従ってください。
           </p>
+                  <p style={{ margin: "18px 0 0", fontSize: 12 }}>関連用語：<a href="../words/conduit-fill/" style={{ color: "#1971C2" }}>電線管の収容率</a>／<a href="../words/cd-pf/" style={{ color: "#1971C2" }}>CD管とPF管の違い</a></p>
         </article>
 
         <footer style={{ marginTop: 20, fontSize: 12, color: SUB, display: "flex", justifyContent: "space-between", flexWrap: "wrap", gap: 8 }}>
           <a href="../" style={{ color: SUB }}>← ツール一覧へ</a>
+          <a href="https://forms.gle/ifJ9uVDc1QBDRZas8" target="_blank" rel="noopener" style={{ color: SUB }}>機能リクエスト</a>
           <a href="../rack-checker/" style={{ color: SUB }}>ケーブルラック占有率チェッカー →</a>
         </footer>
       </div>

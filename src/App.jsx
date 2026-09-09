@@ -55,7 +55,7 @@ const DB = [
     ["KPEV-S 1.25sq-5P", 15.5, 0.27], ["KPEV-S 1.25sq-10P", 20, 0.46],
   ]},
   { group: "通信・弱電", cat: "weak", items: [
-    ["FCPEV 0.75sq-1P", 6.5, 0.05], ["FCPEV 0.75sq-2P", 8.5, 0.07],
+    ["FCPEV 0.75sq-1P", 6.5, 0.05], ["FCPEV 0.75sq-2P", 8.5, 0.07], ["FCPEV 0.75sq-3P", 9, 0.09], ["FCPEV 0.75sq-5P", 10, 0.11], ["FCPEV 0.75sq-10P", 12.5, 0.17], ["FCPEV 0.75sq-15P", 14, 0.22],
     ["FCPEV 0.9-5P", 9.5, 0.09], ["FCPEV 0.9-10P", 11.5, 0.14], ["FCPEV 0.9-20P", 14.5, 0.24],
     ["ディストリビューションケーブル", 9, 0.08],
     ["LAN Cat5e", 5.5, 0.03], ["LAN Cat6", 6.5, 0.04], ["LAN Cat6A", 7.5, 0.05],
@@ -659,10 +659,12 @@ export default function CableRackChecker() {
           <p style={{ margin: 0, color: "#454C52" }}>
             電気工事・計装工事の現場経験をもとに、ラック選定の検討をその場で完結できるように作った無料ツールです。計算結果は概算値による参考情報であり、実施設計における適合性を保証するものではありません。外径・質量・許容荷重はすべて編集できるので、メーカーカタログ値や社内基準値に置き換えてご利用ください。
           </p>
+                  <p style={{ margin: "18px 0 0", fontSize: 12 }}>関連用語：<a href="../words/separator/" style={{ color: "#1971C2" }}>セパレーター</a>／<a href="../words/weak-current-wire/" style={{ color: "#1971C2" }}>弱電流電線</a>／<a href="../words/jkvv/" style={{ color: "#1971C2" }}>JKVVケーブル</a></p>
         </article>
 
         <footer style={{ marginTop: 20, fontSize: 12, color: SUB, display: "flex", justifyContent: "space-between", flexWrap: "wrap", gap: 8 }}>
           <a href="../" style={{ color: SUB }}>← ツール一覧へ</a>
+          <a href="https://forms.gle/ifJ9uVDc1QBDRZas8" target="_blank" rel="noopener" style={{ color: SUB }}>機能リクエスト</a>
           <span>© DENKI TOOLS</span>
         </footer>
       </div>

@@ -63,6 +63,7 @@ export default defineConfig({
         rack: r("rack-checker/index.html"),
         conduit: r("conduit-checker/index.html"),
         pullbox: r("pullbox-checker/index.html"),
+        voltdrop: r("voltage-drop/index.html"),
       },
     },
   },

@@ -306,6 +306,7 @@ export default function PullboxChecker() {
 
         <footer style={{ marginTop: 20, fontSize: 12, color: SUB, display: "flex", justifyContent: "space-between", flexWrap: "wrap", gap: 8 }}>
           <a href="../" style={{ color: SUB }}>← ツール一覧へ</a>
+          <a href="https://forms.gle/ifJ9uVDc1QBDRZas8" target="_blank" rel="noopener" style={{ color: SUB }}>機能リクエスト</a>
           <a href="../conduit-checker/" style={{ color: SUB }}>電線管サイズ選定 →</a>
         </footer>
       </div>
