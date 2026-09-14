@@ -80,6 +80,23 @@ function CircuitFig({ V, L, I, e }) {
   );
 }
 
+
+/* ===== サイト内ナビ ===== */
+function TopBar() {
+  return (
+    <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between", marginBottom: 14 }}>
+      <a href="../" style={{ display: "inline-flex", alignItems: "center", gap: 6, background: CARD, border: `1px solid ${LINE}`, borderRadius: 99, padding: "10px 16px", fontSize: 13, fontWeight: 700, color: INK, textDecoration: "none" }}>← ツール一覧</a>
+      <a href="../" style={{ fontFamily: MONO, fontSize: 11, letterSpacing: "0.18em", color: SUB, fontWeight: 600, textDecoration: "none" }}>DENKI TOOLS</a>
+    </div>
+  );
+}
+function BottomNav({ next }) {
+  const btn = { display: "block", textAlign: "center", padding: "14px 12px", borderRadius: 12, border: `1px solid ${LINE}`, background: CARD, fontWeight: 700, fontSize: 14, color: INK, textDecoration: "none", flex: "1 1 45%" };
+  return (
+    <BottomNav next={{ href: "../rack-checker/", label: "ラック占有率・荷重" }} />
+  );
+}
+
 export default function VoltDropChecker() {
   const [m, setM] = useState("t3");
   const [v, setV] = useState(200);
@@ -113,6 +130,7 @@ export default function VoltDropChecker() {
       `}</style>
 
       <div style={{ maxWidth: 640, margin: "0 auto", padding: "20px 14px 60px" }}>
+        <TopBar />
         <div style={{ marginBottom: 16 }}>
           <div style={{ fontFamily: MONO, fontSize: 11, letterSpacing: "0.18em", color: SUB, fontWeight: 600 }}>VOLTAGE DROP CALC</div>
           <h1 style={{ fontSize: 22, fontWeight: 700, margin: "4px 0 4px" }}>電圧降下 計算ツール</h1>

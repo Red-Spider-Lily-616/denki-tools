@@ -29,8 +29,10 @@
     .rel { background:var(--card); border:1px solid var(--line); border-radius:12px; padding:14px 16px; margin-top:26px; font-size:13px; }
     .rel b { display:block; font-size:11px; color:var(--sub); letter-spacing:.1em; margin-bottom:4px; font-family:'IBM Plex Mono',monospace; }
     .rel a { color:#1971C2; }
-    footer { margin-top:30px; font-size:12px; color:var(--sub); display:flex; justify-content:space-between; flex-wrap:wrap; gap:8px; }
-    footer a { color:var(--sub); }
+    footer { margin-top:30px; display:flex; gap:10px; flex-wrap:wrap; }
+    .navbtn { flex:1 1 45%; display:block; text-align:center; padding:14px 12px; border-radius:12px; border:1px solid var(--line); background:var(--card); font-weight:700; font-size:14px; color:var(--ink); text-decoration:none; }
+    .navbtn.primary { background:var(--ink); color:#fff; border:none; }
+    .copy { flex-basis:100%; text-align:center; font-size:11px; color:var(--sub); margin-top:4px; }
   </style>
   <script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "弱電流電線とは？意味と実務ポイント", "description": "弱電流電線とは何か、強電（低圧ケーブル）との違い、同一ケーブルラック敷設時にセパレーターでの分離が必要になる理由を、計装工事の実務目線で解説します。", "inLanguage": "ja", "mainEntityOfPage": "https://red-spider-lily-616.github.io/denki-tools/words/weak-current-wire/", "author": {"@type": "Organization", "name": "DENKI TOOLS"}, "publisher": {"@type": "Organization", "name": "DENKI TOOLS"}, "image": "https://red-spider-lily-616.github.io/denki-tools/ogp.png"}</script>
   <script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "denki-tools", "item": "https://red-spider-lily-616.github.io/denki-tools/"}, {"@type": "ListItem", "position": 2, "name": "電気用語集", "item": "https://red-spider-lily-616.github.io/denki-tools/words/"}, {"@type": "ListItem", "position": 3, "name": "弱電流電線", "item": "https://red-spider-lily-616.github.io/denki-tools/words/weak-current-wire/"}]}</script>
@@ -52,8 +54,9 @@
       関連用語：<a href="../separator/">セパレーター</a><br>関連ツール：<a href="../../rack-checker/">ケーブルラック占有率・荷重チェッカー</a>（強電・弱電を自動分類してセパレーター位置を計算）
     </div>
     <footer>
-      <a href="../">← 用語集トップへ</a>
-      <span>© DENKI TOOLS</span>
+      <a class="navbtn primary" href="../">用語集トップへ</a>
+      <a class="navbtn" href="../../">ツール一覧へ</a>
+      <div class="copy">© DENKI TOOLS</div>
     </footer>
   </div>
 </body>
