@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>強電と弱電の違いとは？意味と実務ポイント | 電気用語集 - denki-tools</title>
+  <meta name="description" content="強電と弱電の違いをわかりやすく解説。どこからが弱電なのか、CVVなど制御回路の扱い、同一ラック敷設時の分離ルール、工事区分への影響まで、現場で迷いがちな境界線を整理します。" />
+  <link rel="canonical" href="https://red-spider-lily-616.github.io/denki-tools/words/kyoden-jakuden/" />
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="強電と弱電の違いとは？意味と実務ポイント" />
+  <meta property="og:description" content="強電と弱電の違いをわかりやすく解説。どこからが弱電なのか、CVVなど制御回路の扱い、同一ラック敷設時の分離ルール、工事区分への影響まで、現場で迷いがちな境界線を整理します。" />
+  <meta property="og:url" content="https://red-spider-lily-616.github.io/denki-tools/words/kyoden-jakuden/" />
+  <meta property="og:image" content="https://red-spider-lily-616.github.io/denki-tools/ogp.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <link rel="icon" type="image/png" href="../../favicon.png" />
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500;600&family=IBM+Plex+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet" />
+  <style>
+    :root { --ink:#22272B; --sub:#69737D; --paper:#F3F4F1; --card:#FFF; --line:#E1E4DE; --accent:#D9480F; }
+    * { box-sizing:border-box; }
+    body { margin:0; background:var(--paper); color:var(--ink); line-height:2;
+      font-family:'IBM Plex Sans JP','Hiragino Kaku Gothic ProN','Noto Sans JP',sans-serif; }
+    .wrap { max-width:640px; margin:0 auto; padding:24px 16px 60px; font-size:14px; }
+    .crumb { font-size:11px; color:var(--sub); margin-bottom:18px; } .crumb a { color:var(--sub); }
+    .eyebrow { font-family:'IBM Plex Mono',monospace; font-size:11px; letter-spacing:.18em; color:var(--sub); font-weight:600; }
+    h1 { font-size:24px; margin:4px 0 2px; } .yomi { font-size:12px; color:var(--sub); margin:0 0 14px; }
+    .lead { background:var(--card); border:1px solid var(--line); border-radius:12px; padding:14px 16px; font-weight:600; margin:0 0 22px; }
+    h2 { font-size:16px; margin:26px 0 8px; padding-left:10px; border-left:3px solid var(--accent); }
+    p { margin:0 0 14px; color:#454C52; }
+    .rel { background:var(--card); border:1px solid var(--line); border-radius:12px; padding:14px 16px; margin-top:26px; font-size:13px; }
+    .rel b { display:block; font-size:11px; color:var(--sub); letter-spacing:.1em; margin-bottom:4px; font-family:'IBM Plex Mono',monospace; }
+    .rel a { color:#1971C2; }
+    footer { margin-top:30px; display:flex; gap:10px; flex-wrap:wrap; }
+    .navbtn { flex:1 1 45%; display:block; text-align:center; padding:14px 12px; border-radius:12px; border:1px solid var(--line); background:var(--card); font-weight:700; font-size:14px; color:var(--ink); text-decoration:none; }
+    .navbtn.primary { background:var(--ink); color:#fff; border:none; }
+    .copy { flex-basis:100%; text-align:center; font-size:11px; color:var(--sub); margin-top:4px; }
+    </style>
+  <script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "強電と弱電の違いとは？意味と実務ポイント", "description": "強電と弱電の違いをわかりやすく解説。どこからが弱電なのか、CVVなど制御回路の扱い、同一ラック敷設時の分離ルール、工事区分への影響まで、現場で迷いがちな境界線を整理します。", "inLanguage": "ja", "mainEntityOfPage": "https://red-spider-lily-616.github.io/denki-tools/words/kyoden-jakuden/", "author": {"@type": "Organization", "name": "DENKI TOOLS"}, "publisher": {"@type": "Organization", "name": "DENKI TOOLS"}, "image": "https://red-spider-lily-616.github.io/denki-tools/ogp.png"}</script>
+  <script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "denki-tools", "item": "https://red-spider-lily-616.github.io/denki-tools/"}, {"@type": "ListItem", "position": 2, "name": "電気用語集", "item": "https://red-spider-lily-616.github.io/denki-tools/words/"}, {"@type": "ListItem", "position": 3, "name": "強電と弱電の違い", "item": "https://red-spider-lily-616.github.io/denki-tools/words/kyoden-jakuden/"}]}</script>
+</head>
+<body>
+  <div class="wrap">
+    <div class="crumb"><a href="../../">denki-tools</a> › <a href="../">電気用語集</a> › 強電と弱電の違い</div>
+    <div class="eyebrow">WORDS</div>
+    <h1>強電と弱電の違い</h1>
+    <p class="yomi">きょうでん・じゃくでん</p>
+    <p class="lead">「強電」は電灯・動力など電力を送るための電気、「弱電」は通信・計装など信号や情報を伝えるための電気を指す現場用語。厳密な法令用語ではないが、施工区分やラック内の分離ルールを考える土台になっている。</p>
+    <h2>どこからが弱電？</h2>
+    <p>実は「何ボルト以下が弱電」という一律の線引きがあるわけではなく、<b>電気の使い道</b>で分けるのが本質。コンセントや電動機に電力を届けるのが強電、LAN・電話・インターホン・センサー信号のように情報を運ぶのが弱電で、後者に使う電線が「弱電流電線」と呼ばれる。紛らわしいのが制御回路で、100V/200VのCVV・CVVSは見た目が信号線でも低圧回路＝強電側として扱うのが基本。一方、DC24Vや4-20mAの計装信号（JKVV・KPEVなど）は弱電側になる。</p>
+    <h2>現場で効いてくる場面</h2>
+    <p>この区分が実務に直結するのは主に3つ。①同一ケーブルラックへの敷設：低圧ケーブルと弱電流電線を一緒に載せるならセパレーター等での分離が内線規程で求められる。②ノイズ対策：弱電の信号線は動力ケーブルからの誘導を受けやすく、離隔や別ルート化が望ましい。③工事区分：強電は電気工事、弱電は電気通信工事として発注・施工体制が分かれることが多い。迷ったら「その線は電力を運んでいるのか、情報を運んでいるのか」に立ち返ると判断しやすい。</p>
+
+    <div class="rel">
+      <b>RELATED</b>
+      関連用語：<a href="../weak-current-wire/">弱電流電線</a>／<a href="../separator/">セパレーター</a><br>関連ツール：<a href="../../rack-checker/">ケーブルラック占有率・荷重チェッカー</a>（強電・弱電を自動分類）
+    </div>
+    <footer>
+      <a class="navbtn primary" href="../">用語集トップへ</a>
+      <a class="navbtn" href="../../">ツール一覧へ</a>
+      <div class="copy">© DENKI TOOLS</div>
+    </footer>
+  </div>
+</body>
+</html>

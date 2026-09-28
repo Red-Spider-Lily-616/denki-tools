@@ -219,8 +219,8 @@ export default function ConduitChecker() {
         <TopBar />
         <div style={{ marginBottom: 16 }}>
           <div style={{ fontFamily: MONO, fontSize: 11, letterSpacing: "0.18em", color: SUB, fontWeight: 600 }}>CONDUIT SIZE CHECK</div>
-          <h1 style={{ fontSize: 22, fontWeight: 700, margin: "4px 0 4px" }}>電線管サイズ選定ツール</h1>
-          <p style={{ fontSize: 13, color: SUB, margin: 0 }}>入れる電線・ケーブルを選ぶと、収容率{ratio}%基準で各管種の適合サイズを判定します。</p>
+          <h1 style={{ fontSize: 22, fontWeight: 700, margin: "4px 0 4px" }}>電線管・配管サイズ選定ツール</h1>
+          <p style={{ fontSize: 13, color: SUB, margin: 0 }}>入れる電線・ケーブルを選ぶと、電気の配管（電線管）サイズを収容率{ratio}%基準で一括判定します。</p>
         </div>
 
         <div style={{ marginBottom: 16 }}>
@@ -365,7 +365,7 @@ export default function ConduitChecker() {
 
         {/* 解説（SEO） */}
         <article style={{ marginTop: 28, background: CARD, border: `1px solid ${LINE}`, borderRadius: 14, padding: "20px 18px", fontSize: 13, lineHeight: 2 }}>
-          <h2 style={{ fontSize: 16, margin: "0 0 8px" }}>電線管の太さ選定の考え方</h2>
+          <h2 style={{ fontSize: 16, margin: "0 0 8px" }}>電線管（電気配管）のサイズ選定の考え方</h2>
           <p style={{ margin: "0 0 18px", color: "#454C52" }}>
             電線管に収める電線は、被覆絶縁物を含む断面積の総和が管の内断面積の32%以下となるように選定するのが内線規程の基本です（同一太さの電線のみを収め、増設を見込まない場合は電線本数表によることができ、これはおおむね48%に相当します）。本ツールはこの断面積比較を全管種で一括計算し、PF管・CD管・ねじなし電線管・薄鋼・厚鋼・FEPそれぞれの適合サイズを提示します。
           </p>

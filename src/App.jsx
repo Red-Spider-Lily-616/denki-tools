@@ -677,7 +677,7 @@ export default function CableRackChecker() {
           <p style={{ margin: 0, color: "#454C52" }}>
             電気工事・計装工事の現場経験をもとに、ラック選定の検討をその場で完結できるように作った無料ツールです。計算結果は概算値による参考情報であり、実施設計における適合性を保証するものではありません。外径・質量・許容荷重はすべて編集できるので、メーカーカタログ値や社内基準値に置き換えてご利用ください。
           </p>
-                  <p style={{ margin: "18px 0 0", fontSize: 12 }}>関連用語：<a href="../words/separator/" style={{ color: "#1971C2" }}>セパレーター</a>／<a href="../words/weak-current-wire/" style={{ color: "#1971C2" }}>弱電流電線</a>／<a href="../words/jkvv/" style={{ color: "#1971C2" }}>JKVVケーブル</a></p>
+                  <p style={{ margin: "18px 0 0", fontSize: 12 }}>関連用語：<a href="../words/separator/" style={{ color: "#1971C2" }}>セパレーター</a>／<a href="../words/weak-current-wire/" style={{ color: "#1971C2" }}>弱電流電線</a>／<a href="../words/jkvv/" style={{ color: "#1971C2" }}>JKVVケーブル</a>／<a href="../words/rack-load/" style={{ color: "#1971C2" }}>ラックの許容荷重</a></p>
         </article>
 
         <footer style={{ marginTop: 20, fontSize: 12, color: SUB, display: "flex", justifyContent: "space-between", flexWrap: "wrap", gap: 8 }}>
